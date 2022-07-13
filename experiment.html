@@ -24,7 +24,31 @@
     <main>
         <section>
             <h2>Which Wrestler do you like more?</h2>
+            <p>Click submit on the wrestler that you like it more:</p>
 
+            <form action="/action_page.php">
+                <label for="wrestler">Choose wrestler:</label>
+                <select name="wrestler" id="wrestler">
+                  <optgroup label="WWE">
+                    <option value="johncena">John Cena</option>
+                    <option value="dolph">Dolph Ziggler</option>
+                  </optgroup>
+                  <optgroup label="AEW">
+                    <option value="cmpunk">CM PUNK</option>
+                    <option value="mjf">MJF</option>
+                  </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>
+
+            <p><b>I personally like CM Punk Because he is Strong :</b></p>
+            <pre>
+                He is So Strong
+                He is So Smart
+                He Proud of himself
+            </pre>
+            <hr />
         </section>
     </main>
 
