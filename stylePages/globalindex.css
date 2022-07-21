@@ -14,14 +14,15 @@
     gap: 20px;   
 }
 
-#links > a:link{
+#links > a:link, a:visited{
 
     text-decoration: none;
     color: azure;
 }
-#links > a:link{
+#links > a:hover{
 
     text-decoration: none;
+    background-color: yellow;
     color: yellow;
 }
 #intro{
