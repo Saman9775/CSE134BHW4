@@ -26,8 +26,7 @@
 #programming{
     margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: row;
+    flex-direction: row;
     font-size: medium;
     background-image: url(../image/programmingaa.gif);
 }
