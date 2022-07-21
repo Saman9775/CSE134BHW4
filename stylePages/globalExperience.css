@@ -32,10 +32,27 @@
     background-image: url(../image/programmingaa.gif);
 }
 
+#programming > #java > #non{
+
+    border-color: blue;
+}
+
+#programming > #java > #non2{
+
+    border-color: red;
+}
+
+#programming > #java > #non3{
+
+    border-color: darkgreen;
+}
+
 #Projects{
     display: flex;
     flex-direction: row;
 }
+
+
 
 footer{
 
