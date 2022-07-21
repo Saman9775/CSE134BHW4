@@ -17,12 +17,12 @@
 #links > a:link, a:visited{
 
     text-decoration: none;
-    color: var(--backColor);
+    color: var(--fontColor);
 }
 #links > a:hover{
 
     text-decoration: none;
-    color: var(--fontColor);
+    color: var(--backColor);
 }
 #intro{
     margin: auto;
