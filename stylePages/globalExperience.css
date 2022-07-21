@@ -32,7 +32,7 @@
     background-image: url(../image/programmingaa.gif);
 }
 
-#programming{
+#Projects{
     display: flex;
     flex-direction: column;
     text-align: center;
