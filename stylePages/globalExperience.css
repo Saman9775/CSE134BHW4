@@ -26,10 +26,10 @@
 #programming{
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     background-image: url(../image/programmingaa.gif);
 }
 
