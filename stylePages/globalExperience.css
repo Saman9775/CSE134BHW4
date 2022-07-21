@@ -32,11 +32,39 @@
     background-image: url(../image/programmingaa.gif);
 }
 
+#programming > #java{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+#programming > #Cpp{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 25px;
+    margin-right:25px;
+}
+
+#programming > #C{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 50px;
+    margin-right:50px;
+}
+
 #programming > #java > #non{
 
     border-color: blue;
-    background-color: blue;
-    border-style: solid;
+    background-color: black;
+    border-style: solid; 
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #programming > #Cpp > #non2{
@@ -44,19 +72,37 @@
     border-color: red;
     background-color: black;
     border-style: solid;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #programming > #C > #non3{
 
     border-color: darkgreen;
-    background-color: darkgreen;
+    background-color: black;
     border-style: solid;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #Projects{
     display: flex;
     flex-direction: row;
+
+    margin-left: 50px;
 }
+
+#Projects > #soos{
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+   }
 
 
 
