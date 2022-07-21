@@ -29,6 +29,7 @@
     flex-direction: column;
     align-items: row;
     justify-content: center;
+    font-size: medium;
     background-image: url(../image/programmingaa.gif);
 }
 
@@ -92,8 +93,7 @@
 #Projects{
     display: flex;
     flex-direction: row;
-
-    margin-left: 50px;
+    font-size: medium;
 }
 
 #Projects > #soos{
@@ -101,10 +101,13 @@
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    
-   
    }
 
+   #progSkill{
+
+    display: flex;
+    font-size: medium;
+   }
 
 
 footer{
