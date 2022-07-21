@@ -17,12 +17,12 @@
 #links > a:link, a:visited{
 
     text-decoration: none;
-    color: azure;
+    color: var(--fontColor);
 }
 #links > a:hover{
 
     text-decoration: none;
-    color: black;
+    color: var(--backColor);
 }
 #intro{
     margin: auto;
@@ -38,5 +38,5 @@ footer{
     text-align: center;
     padding: 3px;
     background-image: url(../image/res.gif);
-    color: black;
+    color: var(--backColor);;
 }
