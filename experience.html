@@ -25,7 +25,7 @@
         <br />
     </header>
     <main>
-        <section id="programming:">
+        <section id="programming">
           <h2>Programming:</h2>
           <br />
           <details id="java">
@@ -44,41 +44,34 @@
                 </fieldset>
             
           </details>
-        </section>
 
-        <section>
-            <h3>C++:</h3>
-            <form action="/action_page.php">
-                <fieldset>
-                    <legend>C++</legend>
-                    <p>Years of experience with C++ and location:</p>
-                    <ol>
-                        <li><p>UC San Diego: 2021-Present</p></li>
-                    </ol>
-                    <p>Number of C++ project: 5</p>
-                    <p>In C++, if you want to print code, You use <code>printf</code></p>
-                </fieldset>
-               </form>
-        </section>
-        
-        <section>
-            <h4>C:</h4>
-            <form action="/action_page.php">
-                <fieldset>
+          <details id="C++">
+            <fieldset>
+                <legend>C++</legend>
+                <p>Years of experience with C++ and location:</p>
+                <ol>
+                    <li><p>UC San Diego: 2021-Present</p></li>
+                    <li><p>Number of C++ project: 5</p></li>
+                </ol>
+                <p>In C++, if you want to print code, You use <code>printf</code></p>
+            </fieldset>
+          </details>
+          <details id="C">
+            <fieldset>
                 <legend>C</legend>
                 <p>Years of experience with C and location:</p>
                 <ol>
                     <li><p>UC San Diego: 2021</p></li>
+                    <li><p>Number of C++ project: 3</p></li>
                 </ol>
-                <p>Number of C++ project: 3</p>
+                
                 <p>In C, if you want to print code, You use <code>printf</code></p>
                 </fieldset>
-               </form>
-        </section>
+          </details>
 
-        <section>
-            <h5>Notable Projects:</h5>
-            <form action="/action_page.php">
+        </section>  
+        <section id="Projects">
+            <h3>Notable Projects:</h3>
                 <fieldset>
                     <legend>Projects</legend>
                     <ol>
@@ -89,11 +82,9 @@
                         <li><p>Minecarft simiulation game: Java</p></li>
                     </ol>                           
                 </fieldset>
-            </form>
         </section>
-        <section>
-            <h6>Tech Programming Skills:</h6>
-            <form action="/action_page.php">
+        <section id="progSkill">
+            <h4>Tech Programming Skills:</h4>
                 <fieldset>
                     <legend>Skills</legend>
                     <ol>
@@ -102,38 +93,38 @@
                         <li><p>Other Tools: GDB, Linux/Unix, Vs Code, Git, Eclipse, Git</p></li>
                     </ol>
                 </fieldset>
-            </form>
             <hr />
         </section>
-        <div>
-            <form action="/action_page.php">
-                <fieldset>
-                    <legend>Favorite Programming Language</legend>
-                    <p>If you would like to know about Favorite Programming Language,</p>
-
-                    <button onclick="showContent()">Click Here</button>
-
-                    <template>
-                        <p><b>C++</b></p>
-                    </template>
-                    
-                </fieldset>
-            </form>
-        </div>
-        <aside>
-            <form action="/action_page.php">
-                <fieldset>
-                    <legend>Resume</legend>
-                    <p><b>This is my resume:</b></p>
-                    <iframe src="image/resume.pdf" title="Resume"></iframe>
-                    <p><b>And here is the link:</b></p>
-                    <a href="image/resume.pdf"><strong>Resume</strong></a>
-                </fieldset>
-            </form>
-        </aside>
+        <section id="Education">
+                <h5>Education:</h5>
+                <table id="table">
+                    <tr>
+                        <th>School</th>
+                        <th>Major</th>
+                        <th>Degree</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <tb>San Diego Mesa College</tb>
+                        <tb>Computer Science</tb>
+                        <tb>Associate degree</tb>
+                        <tb>2018-2020</tb>
+                    </tr>
+                    <tr>
+                        <tb>UC San Diego</tb>
+                        <tb>Computer Science</tb>
+                        <tb>Bachelor</tb>
+                        <tb>2020-present</tb>
+                    </tr>
+                </table>
+                <hr />
+        </section>
+        <section id="resume">
+            <h6> My Resume:</h6>
+            <iframe src="image/resume.pdf" title="Resume"></iframe>
+            <p><b>And here is the link:</b></p>
+            <a href="image/resume.pdf"><strong>Resume</strong></a>
+        </section>
     </main>
-    
-    
-
 </body>
 </html>
