@@ -35,16 +35,22 @@
 #programming > #java > #non{
 
     border-color: blue;
+    background-color: blue;
+    border-style: solid;
 }
 
-#programming > #java > #non2{
+#programming > #Cpp > #non2{
 
     border-color: red;
+    background-color: black;
+    border-style: solid;
 }
 
-#programming > #java > #non3{
+#programming > #C > #non3{
 
     border-color: darkgreen;
+    background-color: darkgreen;
+    border-style: solid;
 }
 
 #Projects{
