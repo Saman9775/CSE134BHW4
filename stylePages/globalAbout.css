@@ -2,13 +2,12 @@ element{
 
     --font_color:white;
     --page_color:black;
-    --textLine:1.5;
 }
 
 :root{
     font-family: sans-serif;
-    color: var(--font_color);
-    background-color: var(--page_color);   
+    color: white;
+    background-color: black;   
     background-image: url(../image/background.jpg);
 }
 
@@ -37,10 +36,6 @@ element{
     text-align: center;
     align-items: center;
     justify-content: center;
-}
-
-p#Bio{
-    line-height: var(--textLine);
 }
 
 #Family_info{
