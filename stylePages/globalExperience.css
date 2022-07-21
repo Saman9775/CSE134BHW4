@@ -26,7 +26,7 @@
 #programming{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: row;
     align-items: row;
     justify-content: row;
     background-image: url(../image/programmingaa.gif);
