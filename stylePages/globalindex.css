@@ -1,7 +1,13 @@
+element{
+
+    --font_color:white;
+    --page_color:black;
+}
+
 :root{
     font-family: sans-serif;
-    color: azure;
-    background-color: black;   
+    color: var(--font_color);
+    background-color: var(--page_color);    
 }
 
 #links{

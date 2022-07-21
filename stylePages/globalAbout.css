@@ -1,7 +1,14 @@
+element{
+
+    --font_color:white;
+    --page_color:black;
+    --textLine:1.5;
+}
+
 :root{
     font-family: sans-serif;
-    color: azure;
-    background-color: black;   
+    color: var(--font_color);
+    background-color: var(--page_color);   
     background-image: url(../image/background.jpg);
 }
 
@@ -30,6 +37,10 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+p#Bio{
+    line-height: var(--textLine);
 }
 
 #Family_info{
