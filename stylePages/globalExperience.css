@@ -35,7 +35,6 @@
 #Projects{
     display: flex;
     flex-direction: row;
-    color: black !important;
     align-items: center;
     justify-content: center;
 }
