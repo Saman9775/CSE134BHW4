@@ -6,6 +6,10 @@
     
 }
 
+header{
+
+    display: flex;
+}
 
 #links{
 
@@ -22,8 +26,7 @@
 #links > a:hover{
 
     text-decoration: none;
-    background-color: yellow;
-    color: yellow;
+    color: green;
 }
 #intro{
     margin: auto;
