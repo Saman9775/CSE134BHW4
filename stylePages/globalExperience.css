@@ -61,7 +61,7 @@
 
     border-color: blue;
     background-color: black;
-    border-style: solid; 
+    border-style: 1px solid; 
     margin-top: auto;
     margin-bottom:auto;
     margin-left: auto;
@@ -72,7 +72,7 @@
 
     border-color: red;
     background-color: black;
-    border-style: solid;
+    border-style: 1px solid;
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 25px;
@@ -83,7 +83,7 @@
 
     border-color: darkgreen;
     background-color: black;
-    border-style: solid;
+    border-style: 1px solid;
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 50px;
@@ -101,6 +101,8 @@
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
+    background-color: blue;
+    border-color: black;
    }
 
 #progSkill{
@@ -114,8 +116,21 @@
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
+    background-color: red;
+    border-color: black;
 }
 
+#Education{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Education > #tablee > table,th,td{
+
+    border: 1px solid;
+}
 footer{
 
     text-align: center;
