@@ -1,13 +1,9 @@
-element{
-
-    --font_color:white;
-    --page_color:black;
-}
-
 :root{
+    --fontColor:white;
+    --backColor:black;
     font-family: sans-serif;
-    color: var(--font_color);
-    background-color: black;    
+    color: var(--fontColor);
+    background-color: var(--backColor);    
 }
 
 #links{
