@@ -6,7 +6,7 @@ element{
 
 :root{
     font-family: sans-serif;
-    color: white;
+    color: var(--font_color);
     background-color: black;   
     background-image: url(../image/background.jpg);
 }

@@ -7,7 +7,7 @@ element{
 :root{
     font-family: sans-serif;
     color: var(--font_color);
-    background-color: var(--page_color);    
+    background-color: black;    
 }
 
 #links{
