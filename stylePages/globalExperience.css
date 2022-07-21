@@ -27,9 +27,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: right;
+    align-items: row;
+    justify-content: center;
     background-image: url(../image/programmingaa.gif);
 }
 
