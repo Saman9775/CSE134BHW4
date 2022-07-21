@@ -9,8 +9,9 @@
 #links{
 
     display: flex;
-    background-image: url(../image/linee.gif);
     flex-direction: row;
+    background-image: url(../image/linee.gif);
+    background-size: auto;
     gap: 20px;   
 }
 
