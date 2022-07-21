@@ -23,6 +23,12 @@
     color: black;
 }
 
+#personal{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../image/background.jpg);
+    text-align: center;
+}
 footer{
 
     text-align: center;
