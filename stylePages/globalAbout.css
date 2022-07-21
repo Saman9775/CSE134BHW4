@@ -4,7 +4,8 @@
     --backColor:black;
     font-family: sans-serif;
     color: var(--fontColor);
-    background-color: var(--backColor);    
+    background-color: var(--backColor);
+    --lineSpace:1.5;   
     background-image: url(../image/background.jpg);
 }
 
@@ -36,7 +37,7 @@
 }
 
 #personal > #Bio > p{
-    line-height:1.5;
+    line-height:var(--lineSpace);
 }
 #Family_info{
     display: flex;
@@ -46,12 +47,20 @@
     justify-content: center;
 }
 
+#Family_info > #family > p{
+    line-height:var(--lineSpace);
+}
+
 #skill{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+#skill > p{
+    line-height:var(--lineSpace);
 }
 
 footer{
