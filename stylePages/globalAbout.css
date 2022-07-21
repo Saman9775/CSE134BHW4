@@ -1,0 +1,23 @@
+:root{
+    font-family: sans-serif;
+    color: azure;
+    background-color: black;   
+}
+
+#links{
+
+    display: flex;
+    flex-direction: row;
+    background-image: url(../image/res.gif);
+    gap: 20px;   
+}
+
+
+
+footer{
+
+    text-align: center;
+    padding: 3px;
+    background-image: url(../image/res.gif);
+    color: black;
+}
