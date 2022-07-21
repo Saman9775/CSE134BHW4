@@ -12,7 +12,16 @@
     gap: 20px;   
 }
 
+#links > a:link, a:visited{
 
+    text-decoration: none;
+    color: azure;
+}
+#links > a:hover{
+
+    text-decoration: none;
+    color: black;
+}
 
 footer{
 
