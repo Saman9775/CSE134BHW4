@@ -59,7 +59,7 @@
     justify-content: center;
 }
 
-#skill > p{
+#skill > #skill2 > p{
     line-height:var(--lineSpace);
 }
 
