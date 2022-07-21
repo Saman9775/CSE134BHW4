@@ -3,15 +3,16 @@
     color: azure;
     background-color: black;
     
-    
+}
+
+header{
+    background-image: url(../image/GUID.gif);
 }
 
 #links{
 
     display: flex;
     flex-direction: row;
-    background-image: url(../image/linee.gif);
-    background-size: auto;
     gap: 20px;   
 }
 
