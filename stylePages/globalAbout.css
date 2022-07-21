@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-p#Bio{
+#personal > #Bio > p{
     line-height:1.5;
 }
 #Family_info{
