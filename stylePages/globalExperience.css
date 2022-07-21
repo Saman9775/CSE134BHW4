@@ -26,7 +26,6 @@
 #programming{
     display: flex;
     flex-direction: column;
-    text-align: row;
     align-items: row;
     justify-content: center;
     background-image: url(../image/programmingaa.gif);
@@ -35,8 +34,9 @@
 #Projects{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: row;
     justify-content: center;
+
 }
 
 footer{
