@@ -2,6 +2,7 @@
     font-family: sans-serif;
     color: azure;
     background-color: black;   
+    background-image: url(../image/background.jpg);
 }
 
 #links{
@@ -26,21 +27,18 @@
 #personal{
     display: flex;
     flex-direction: column;
-    background-image: url(../image/background.jpg);
     text-align: center;
 }
 
 #Family_info{
     display: flex;
     flex-direction: column;
-    background-image: url(../image/background.jpg);
     text-align: center;
 }
 
 #skill{
     display: flex;
     flex-direction: column;
-    background-image: url(../image/background.jpg);
     text-align: center;
 }
 
