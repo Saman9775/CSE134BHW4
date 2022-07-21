@@ -63,8 +63,8 @@
     border-color: blue;
     background-color: black;
     border-style: 1px solid; 
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -74,8 +74,8 @@
     border-color: red;
     background-color: black;
     border-style: 1px solid;
-    margin-top: auto;
-    margin-bottom:auto;
+    margin-top: 0px;
+    margin-bottom:0px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -85,8 +85,8 @@
     border-color: darkgreen;
     background-color: black;
     border-style: 1px solid;
-    margin-top: auto;
-    margin-bottom:auto;
+    margin-top: 0px;
+    margin-bottom:0px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -145,14 +145,8 @@
 .resume{
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     font-size: medium;
-}
-iframe.resume{
-
-    margin: 0px;
-    width: 5px;
-    height: 5px;
 }
 
 a:link.resume,a:visited.resume{
