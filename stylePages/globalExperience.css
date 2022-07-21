@@ -26,8 +26,8 @@
 #programming{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: row;
+    text-align: row;
+    align-items: center;
     justify-content: row;
     background-image: url(../image/programmingaa.gif);
 }
