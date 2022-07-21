@@ -9,6 +9,7 @@
 #links{
 
     display: flex;
+    background-image: url(../image/videoaaa.gif);
     flex-direction: row;
     gap: 20px;   
 }
