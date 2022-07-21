@@ -1,0 +1,40 @@
+:root{
+    font-family: sans-serif;
+    color: white;
+    background-color: black;    
+}
+
+#links{
+
+    display: flex;
+    flex-direction: row;
+    background-image: url(../image/res.gif);
+    gap: 20px;   
+}
+
+#links > a:link, a:visited{
+
+    text-decoration: none;
+    color: white;
+}
+#links > a:hover{
+
+    text-decoration: none;
+    color: black;
+}
+
+#programming{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+
+    text-align: center;
+    padding: 3px;
+    background-image: url(../image/res.gif);
+    color:black;
+}
