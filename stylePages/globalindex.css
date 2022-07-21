@@ -24,6 +24,7 @@
     text-decoration: none;
     color: var(--backColor);
 }
+
 #intro{
     margin: auto;
     display: flex;
