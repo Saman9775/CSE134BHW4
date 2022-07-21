@@ -34,8 +34,9 @@
 
 #Projects{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    color: black !important;
     align-items: center;
     justify-content: center;
     background-image: url(../image/project.jpg);
