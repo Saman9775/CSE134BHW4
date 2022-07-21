@@ -9,6 +9,7 @@
 header > h1{
 
     display: flex;
+    margin: 0;
 }
 
 #links{
