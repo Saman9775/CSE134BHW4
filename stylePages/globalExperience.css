@@ -45,16 +45,16 @@
 
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: 25px;
-    margin-right:25px;
+    margin-left: 0px;
+    margin-right:0px;
 }
 
 #programming > #C{
 
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: 50px;
-    margin-right:50px;
+    margin-left: 0px;
+    margin-right:0px;
 }
 
 #programming > #java > #non{
@@ -63,9 +63,9 @@
     background-color: black;
     border-style: 1px solid; 
     margin-top: auto;
-    margin-bottom:auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #programming > #Cpp > #non2{
@@ -125,12 +125,19 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: medium;
 }
 
+#Education > #tablee{
+
+    background-color: yellow;
+    color: black;
+}
 #Education > #tablee > table,th,td{
 
     border: 1px solid;
 }
+
 footer{
 
     text-align: center;
