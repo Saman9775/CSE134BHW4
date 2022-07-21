@@ -37,24 +37,24 @@
 
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: auto;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: auto;
 }
 
 #programming > #Cpp{
 
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left: 0px;
-    margin-right:0px;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 100px;
+    margin-right: auto;
 }
 
 #programming > #C{
 
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left: 0px;
-    margin-right:0px;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 100px;
+    margin-right: auto;
 }
 
 #programming > #java > #non{
