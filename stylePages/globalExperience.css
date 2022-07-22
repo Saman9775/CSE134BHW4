@@ -148,19 +148,20 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: medium;   
+    font-size: medium;  
+    background-color: darkorchid; 
 }
 .resume > a:link, a:visited{
 
     text-decoration: none;
-    color:white !important;
+    color:black !important;
     
 }
 
 .resume > a:hover{
 
     text-decoration: none;
-    color:red !important;
+    color:white !important;
 }
 
 footer{
