@@ -15,7 +15,8 @@ header{
     background-image: url(../image/musics.jpg);
 }
 header >h1{
-    color: black;
+    color: red;
+    font-family: stone;
 }
 #links{
 
