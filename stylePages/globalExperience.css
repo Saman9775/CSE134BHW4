@@ -26,10 +26,33 @@
 #programming{
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: row;
     font-size: medium;
     background-image: url(../image/programmingaa.gif);
+}
+#programming > #java{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#programming > #Cpp{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#programming > #C{
+
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #programming > #java > #non{
