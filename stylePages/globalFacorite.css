@@ -55,7 +55,10 @@ header >h1{
 }
 
 #yout{
-    background-image: url(../image/musicd.gif);
+    background-image: url(../image/logoasd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
