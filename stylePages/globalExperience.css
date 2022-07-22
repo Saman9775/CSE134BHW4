@@ -27,7 +27,6 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: row;
     justify-content: center;
     font-size: medium;
     background-image: url(../image/programmingaa.gif);
@@ -61,7 +60,7 @@
 
     border-color: blue;
     background-color: black;
-    border-style: 1px solid; 
+    border-style:solid; 
     margin-top: auto;
     margin-bottom:auto;
     margin-left: auto;
@@ -83,7 +82,7 @@
 
     border-color: darkgreen;
     background-color: black;
-    border-style: 1px solid;
+    border-style: solid;
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 50px;
@@ -144,7 +143,6 @@
 .resume{
     display: flex;
     flex-direction: column;
-    align-items: row;
 }
 
 iframe.resume{
