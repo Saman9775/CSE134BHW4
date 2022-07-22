@@ -144,13 +144,17 @@
     
 }
 
-.resume{
-    display: flex;
-    flex-direction: column;
+.resume > a:link, a:visited{
+
+    text-decoration: none;
+    color:white;
+    
 }
 
-a.resume{
-    color: white;
+.resume > a:hover{
+
+    text-decoration: none;
+    color:black;
 }
 
 footer{
