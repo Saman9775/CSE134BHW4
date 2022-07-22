@@ -34,7 +34,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 1px sandybrown solid;
+    border: 2px darkmagenta solid;
 }
 
 #personal > #Bio > p{
@@ -46,6 +46,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    border: 2px darkmagenta solid;
 }
 
 #Family_info > #family > p{
@@ -58,6 +59,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    border: 2px darkmagenta solid;
 }
 
 #skill > #skill2 > p{
