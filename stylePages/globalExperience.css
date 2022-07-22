@@ -141,15 +141,6 @@
     
 }
 
-.resume{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: medium;
-    margin: auto;
-}
-
 a:link.resume,a:visited.resume{
     text-decoration: none;
     color: white;
