@@ -59,7 +59,7 @@
 
     border-color: blue;
     background-color: black;
-    border-style: 1px solid; 
+    border-style: solid; 
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -70,7 +70,7 @@
 
     border-color: red;
     background-color: black;
-    border-style: 1px solid;
+    border-style: solid;
     margin-top: 0px;
     margin-bottom:0px;
     margin-left: 0px;
@@ -81,7 +81,7 @@
 
     border-color: darkgreen;
     background-color: black;
-    border-style: 1px solid;
+    border-style:solid;
     margin-top: 0px;
     margin-bottom:0px;
     margin-left: 0px;
