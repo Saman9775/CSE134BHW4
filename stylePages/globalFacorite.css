@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: stone;
+    src: url(../fonts/fonts.ttf);
+}
+:root{
+    --fontColor:white;
+    --backColor:black;
+    font-family: stone;
+    color: var(--fontColor);
+    background-color: var(--backColor);    
+}
+
+#links{
+
+    display: flex;
+    flex-direction: row;
+    background-image: url(../image/res.gif);
+    gap: 20px;   
+}
+
+#links > a:link, a:visited{
+
+    text-decoration: none;
+    color: var(--fontColor);
+}
+#links > a:hover{
+
+    text-decoration: none;
+    color: var(--backColor);
+}
+
+footer{
+
+    text-align: center;
+    padding: 3px;
+    background-image: url(../image/res.gif);
+    color: var(--backColor);;
+}
