@@ -12,6 +12,7 @@
 }
 
 header{
+    display: flex;
     background-image: url(../image/musics.jpg);
     background-position: center;
     background-repeat: no-repeat;
