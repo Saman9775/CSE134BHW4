@@ -38,6 +38,9 @@ header >h1{
     color: var(--backColor);
 }
 
+#upload > h2{
+    font-family: stone;
+}
 #upload > #voice{
 
     margin-top: auto;
