@@ -141,6 +141,10 @@
     
 }
 
+.resume{
+    display: flex;
+    
+}
 a:link.resume,a:visited.resume{
     text-decoration: none;
     color: white;
@@ -149,6 +153,7 @@ a:hover.resume{
     text-decoration: none;
     color: red;
 }
+
 footer{
 
     text-align: center;
