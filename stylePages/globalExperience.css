@@ -144,6 +144,12 @@
     
 }
 
+.resume{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: medium;   
+}
 .resume > a:link, a:visited{
 
     text-decoration: none;
@@ -154,7 +160,7 @@
 .resume > a:hover{
 
     text-decoration: none;
-    color:black;
+    color:red;
 }
 
 footer{
