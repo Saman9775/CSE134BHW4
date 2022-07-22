@@ -38,10 +38,6 @@ header >h1{
     color: var(--backColor);
 }
 
-#upload{
-    display: flex;
-}
-
 #upload > #voice{
 
     margin-top: auto;
