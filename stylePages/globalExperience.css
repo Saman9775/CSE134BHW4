@@ -150,14 +150,14 @@
     text-align: center;
     font-size: medium;   
 }
-a:link.resume, a:visited.resume{
+.resume > a:link, a:visited{
 
     text-decoration: none;
     color:white !important;
     
 }
 
-a:hover.resume{
+.resume > a:hover{
 
     text-decoration: none;
     color:red !important;
