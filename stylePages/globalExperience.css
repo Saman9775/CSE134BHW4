@@ -153,14 +153,14 @@
 .resume > a:link, a:visited{
 
     text-decoration: none;
-    color:white;
+    color:white !important;
     
 }
 
 .resume > a:hover{
 
     text-decoration: none;
-    color:red;
+    color:red !important;
 }
 
 footer{
