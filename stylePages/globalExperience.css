@@ -142,14 +142,20 @@
 }
 
 .resume{
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: row;
     justify-content: center;
-    font-size: medium;
-    
+    font-size: medium;  
 }
+
+iframe.resume{
+
+    margin: 0px;
+    height: 5px;
+    width: 5px;
+}
+
 a:link.resume,a:visited.resume{
     text-decoration: none;
     color: white;
