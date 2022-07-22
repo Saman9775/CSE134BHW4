@@ -3,12 +3,6 @@
       flex-direction: column;
     }   
 }
-
-@media only screen and (max-width: 400px) {
-    body {
-      background-color: red;
-    }
-}  
 @font-face {
     font-family: stone;
     src: url(../fonts/fonts.ttf);
