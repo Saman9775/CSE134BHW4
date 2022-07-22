@@ -6,11 +6,14 @@
 :root{
     --fontColor:white;
     --backColor:black;
-    font-family: stone;
+    font-family: sans-serif;
     color: var(--fontColor);
-    background-color: var(--backColor);    
+    background-color: var(--backColor);
 }
 
+header{
+    background-image: url(../image/musics.jpg);
+}
 #links{
 
     display: flex;

@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: row;
     background-image: url(../image/res.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: 20px;   
 }
 
@@ -30,6 +33,9 @@
     justify-content: center;
     font-size: medium;
     background-image: url(../image/programmingaa.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #programming > #java{
@@ -168,5 +174,8 @@ footer{
     text-align: center;
     padding: 3px;
     background-image: url(../image/res.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color:black;
 }
