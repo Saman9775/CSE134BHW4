@@ -4,6 +4,7 @@
     src: url(../fonts/fonts.ttf);
 }
 :root{
+    display: flex;
     --fontColor:white;
     --backColor:black;
     font-family: sans-serif;
