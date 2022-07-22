@@ -149,22 +149,8 @@
     flex-direction: column;
 }
 
-iframe.resume{
-
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
-
-}
-
-a:link.resume,a:visited.resume{
-    text-decoration: none;
+a.resume{
     color: white;
-}
-a:hover.resume{
-    text-decoration: none;
-    color: red;
 }
 
 footer{
@@ -172,5 +158,5 @@ footer{
     text-align: center;
     padding: 3px;
     background-color: aqua;
-    color: var(--backColor);;
+    color: black;;
 }
