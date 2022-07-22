@@ -38,11 +38,17 @@ header >h1{
     color: var(--backColor);
 }
 
-#upload > h2 {
-    font-size: large;
-    font-family: stone;
+#upload{
+    display: flex;
 }
 
+#upload > #voice{
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 footer{
 
     text-align: center;
