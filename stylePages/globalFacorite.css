@@ -13,6 +13,9 @@
 
 header{
     background-image: url(../image/musics.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #links{
 
@@ -31,6 +34,11 @@ header{
 
     text-decoration: none;
     color: var(--backColor);
+}
+
+#upload > h2 {
+    font-size: large;
+    font-family: stone;
 }
 
 footer{

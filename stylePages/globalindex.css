@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: row;
     background-image: url(../image/res.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: 20px;   
 }
 
@@ -39,5 +42,8 @@ footer{
     text-align: center;
     padding: 3px;
     background-image: url(../image/res.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--backColor);;
 }
