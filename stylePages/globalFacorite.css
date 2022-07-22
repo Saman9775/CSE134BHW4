@@ -1,4 +1,8 @@
-
+@media (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
 @font-face {
     font-family: stone;
     src: url(../fonts/fonts.ttf);

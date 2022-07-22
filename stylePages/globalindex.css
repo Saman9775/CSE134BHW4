@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
+
 :root{
     --fontColor:white;
     --backColor:black;
