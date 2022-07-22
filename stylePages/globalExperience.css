@@ -8,11 +8,9 @@
 
     display: flex;
     flex-direction: row;
-    background-image: url(../image/res.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    gap: 20px;   
+    background-color: aqua;
+    gap: 20px;
+    color: black;
 }
 
 #links > a:link, a:visited{
@@ -173,9 +171,6 @@ footer{
 
     text-align: center;
     padding: 3px;
-    background-image: url(../image/res.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:black;
+    background-color: aqua;
+    color: var(--backColor);;
 }

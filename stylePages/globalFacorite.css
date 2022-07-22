@@ -18,13 +18,14 @@ header >h1{
     color: red;
     font-family: stone;
 }
+
 #links{
 
-    font-family: sans-serif;
     display: flex;
     flex-direction: row;
-    background-image: url(../image/res.gif);
-    gap: 20px;   
+    background-color: aqua;
+    gap: 20px;
+    color: black;
 }
 
 #links > a:link, a:visited{
@@ -65,6 +66,6 @@ footer{
 
     text-align: center;
     padding: 3px;
-    background-image: url(../image/res.gif);
+    background-color: aqua;
     color: var(--backColor);;
 }
