@@ -27,6 +27,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    align-items: row;
     font-size: medium;
     background-image: url(../image/programmingaa.gif);
 }
@@ -72,8 +73,8 @@
     border-style: 1px solid;
     margin-top: 0px;
     margin-bottom:0px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #programming > #C > #non3{
@@ -83,8 +84,8 @@
     border-style: 1px solid;
     margin-top: 0px;
     margin-bottom:0px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #Projects{
