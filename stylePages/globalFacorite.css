@@ -13,14 +13,13 @@
 
 header{
     background-image: url(../image/musics.jpg);
-    background-size: cover;
 }
 header >h1{
-    font-family: stone;
     color: black;
 }
 #links{
 
+    font-family: sans-serif;
     display: flex;
     flex-direction: row;
     background-image: url(../image/res.gif);
