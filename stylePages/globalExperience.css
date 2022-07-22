@@ -15,13 +15,13 @@
 #links > a:link, a:visited{
 
     text-decoration: none;
-    color:var(--backColor);
+    color:black;
     
 }
 #links > a:hover{
 
     text-decoration: none;
-    color:var( --fontColor);
+    color:white;
 }
 
 #programming{
