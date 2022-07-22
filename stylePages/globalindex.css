@@ -12,17 +12,18 @@
     flex-direction: row;
     background-color: aqua;
     gap: 20px;
-    color: black;
 }
+
 #links > a:link, a:visited{
 
     text-decoration: none;
-    color: var(--fontColor);
+    color:var(--backColor);
+    
 }
 #links > a:hover{
 
     text-decoration: none;
-    color: var(--backColor);
+    color:var( --fontColor);
 }
 
 #intro{
