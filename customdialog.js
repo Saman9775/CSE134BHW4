@@ -119,11 +119,10 @@ document.getElementById("BSafer").addEventListener("click", safe_open);
 
 export function safe_closeByOk(){
     let val;
-    let safe_val;
     button_ON();
     document.getElementById("safePrompt").close();
     val = document.getElementById("sfe").value;
-    safe_val = DOMPurify.sanitize(val);
+    let safe_val = DOMPurify.sanitize(val);
     if(safe_val != null && safe_val != ""){
 
         document.getElementById("safeP_Out").innerHTML = `Prompt result: ${safe_val}`;
@@ -150,4 +149,4 @@ export function safe_closeByCancel(){
     document.getElementById("confirmOut").style.display = "none";
 }
 
-document.getElementById("safeBut1").addEventListener("click", safe_closeByCancel);
+document.getElementById("safeBut1").addEventListener("click", safe_closeByCancel);+

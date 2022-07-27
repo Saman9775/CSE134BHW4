@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Saman Zarei">
-    <title>firstHW4</title> 
+    <title>NativeDialog</title> 
     <link href="image/favicon.png" rel="icon"/>
     <script type="text/javascript" src="DOMPurify/dist/purify.js"></script>
     
@@ -76,7 +76,7 @@
             if(ask_safe != null && ask_safe != ""){
 
                 let saf = DOMPurify.sanitize(ask_safe);
-                document.getElementById("safeP_Out").innerHTML = `Prompt result:: ${saf}`;
+                document.getElementById("safeP_Out").innerHTML = `Prompt result: ${saf}`;
             }
 
             else {
