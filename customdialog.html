@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>secondHW4</title> 
+    <script type="text/javascript" src="js/vendor/DOMPurify/dist/purify.js"></script>
+    <script type="module" src="js/customdialog.js"></script>
+</head>
+<body>
+<h1>Created Dialogs?</h1>
+<button id="BAlert">Alert</button> &nbsp; &nbsp;
+<button id="BConfirm">Confirm</button>  &nbsp; &nbsp;
+<button id="Bprompt">Prompt</button>  &nbsp; &nbsp;
+<button id="BSafer">Safer Prompt</button>  &nbsp; &nbsp;
+<hr />
+<output id="confirmOut"></output>
+<output id="promptOut"></output>
+<output id="safeP_Out"></output>
+
+<dialog id="dialogAlert">
+    <p>Greetings, one and all!</p>
+    <form method="dialog">
+    <button id="alertBut" style="margin-left: 50px;">OK</button>
+    </form>
+</dialog>
+
+<dialog id="dialogConfirm">
+    <p>Do you confirm it? </p>
+    <form method="dialog">
+        <button id="confirmBut1" style="text-align: left;">Cancel</button>
+        <button id="confirmBut2" style="text-align: right;">Okay</button>
+    </form>
+</dialog>
+
+<dialog id="dialogPrompt">
+    <form method="dialog">
+
+        <label for="pmt">Tell me your favorite soccer team</label>
+        <input type="text" id="pmt" name="pmt" style="width:100%">
+        <div style="text-align: right;">
+            <br>
+            <button id="promptBut1">Cancel</button>
+            <button id="promptBut2">Ok</button>
+        </div>
+    </form>
+</dialog>
+
+<dialog id="safePrompt">
+    <form method="dialog">
+
+        <label for="sfe">Tell me your favorite soccer team</label>
+        <input type="text" id="sfe" name="sfe" style="width:100%">
+        <div style="text-align: right;">
+            <br>
+            <button id="safeBut1">Cancel</button>
+            <button id="safeBut2">Ok</button>
+        </div>
+    </form>
+</dialog>  
+</body>
+</html>

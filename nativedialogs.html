@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>firstHW4</title> 
+    <script type="text/javascript" src="js/vendor/DOMPurify/dist/purify.js"></script>
+    
+</head>
+
+<body>
+    <h1>Simple Dialogs?</h1>
+    <button id="BAlert">Alert</button> &nbsp; &nbsp;
+    <button id="BConfirm">Confirm</button>  &nbsp; &nbsp;
+    <button id="Bprompt">Prompt</button>  &nbsp; &nbsp;
+    <button id="BSafer">Safer Prompt</button>  &nbsp; &nbsp;
+    <hr />
+    <output id="confirmOut"></output>
+    <output id="promptOut"></output>
+    <output id="safeP_Out"></output>
+
+
+   
+    <script>
+
+        //Since we need to use an arrow function, I think Alert is the easiet one to do it
+        document.getElementById("BAlert").addEventListener("click", ()=> {
+            alert("Show allert")
+        });
+
+        // Since we need to confirm or cancel the text, we can use confirm() function
+        const element1 = document.getElementById("BConfirm");
+        function confirmFunc(){
+
+            let ask_confrim = confirm("Do you confirm it?");
+            document.getElementById("confirmOut").innerHTML = `Confirm result: ${ask_confrim}`;
+            document.getElementById("confirmOut").style.display = "initial";
+            document.getElementById("promptOut").style.display = "none";
+            document.getElementById("safeP_Out").style.display = "none";
+
+        }
+        element1.addEventListener("click", confirmFunc);
+
+        //This is for prompt and we use prompt() function
+        const element2 = document.getElementById("Bprompt");
+        function promptFunc(){
+            let ask_prompt = prompt("Tell me your favorite soccer team");
+            if(ask_prompt != null && ask_prompt != ""){
+
+                document.getElementById("promptOut").innerHTML = `Prompt result: ${ask_prompt}`;
+            }
+
+            else {
+
+                document.getElementById("promptOut").innerHTML = "User didn't enter anything";
+            }
+
+            document.getElementById("promptOut").style.display = "initial";
+            document.getElementById("confirmOut").style.display = "none";
+            document.getElementById("safeP_Out").style.display = "none";
+        }
+        element2.addEventListener("click", promptFunc);
+
+
+        // This is for safer prompt that I need to use
+
+        const element3 = document.getElementById("BSafer");
+        function safeFunc(){
+            let ask_safe = prompt("Tell me your favorite soccer team");
+            if(ask_safe != null && ask_safe != ""){
+
+                let saf = DOMPurify.sanitize(ask_safe);
+                document.getElementById("safeP_Out").innerHTML = `Prompt result:: ${saf}`;
+            }
+
+            else {
+
+                document.getElementById("safeP_Out").innerHTML = "User didn't enter anything";
+            }
+
+            document.getElementById("safeP_Out").style.display = "initial";
+            document.getElementById("promptOut").style.display = "none";
+            document.getElementById("confirmOut").style.display = "none";
+            
+        }
+        element3.addEventListener("click", safeFunc);
+
+    </script>
+    
+</body>
+</html>
