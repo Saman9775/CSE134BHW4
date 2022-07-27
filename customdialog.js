@@ -109,3 +109,45 @@ export function prompt_closeByCancel(){
 }
 
 document.getElementById("promptBut1").addEventListener("click", prompt_closeByCancel);
+
+export function safe_open(){
+    button_OFF();
+    document.getElementById("safePrompt").show();
+}
+
+document.getElementById("BSafer").addEventListener("click", safe_open);
+
+export function safe_closeByOk(){
+    let val;
+    let safe_val;
+    button_ON();
+    document.getElementById("safePrompt").close();
+    val = document.getElementById("sfe").value;
+    safe_val = DOMPurify.sanitize(val);
+    if(safe_val != null && safe_val != ""){
+
+        document.getElementById("safeP_Out").innerHTML = `Prompt result: ${safe_val}`;
+    }
+
+    else {
+
+        document.getElementById("safeP_Out").innerHTML = "User didn't enter anything";
+    }
+    
+    document.getElementById("safeP_Out").style.display = "initial";
+    document.getElementById("promptOut").style.display = "none";
+    document.getElementById("confirmOut").style.display = "none";
+}
+
+document.getElementById("safeBut2").addEventListener("click", safe_closeByOk);
+
+export function safe_closeByCancel(){
+    button_ON();
+    document.getElementById("safePrompt").close();
+    document.getElementById("safeP_Out").innerHTML = "User didn't enter anything";
+    document.getElementById("safeP_Out").style.display = "initial";
+    document.getElementById("promptOut").style.display = "none";
+    document.getElementById("confirmOut").style.display = "none";
+}
+
+document.getElementById("safeBut1").addEventListener("click", safe_closeByCancel);
