@@ -44,11 +44,9 @@ document.getElementById("BConfirm").addEventListener("click",confirmOn);
 
 
 export function true_conformOff(){
-    let confirm_state;
     button_ON();
-    confirm_state = true;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: true`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
@@ -57,11 +55,10 @@ export function true_conformOff(){
 document.getElementById("confirmBut2").addEventListener("click", true_conformOff);
 
 export function false_conformOff(){
-    let confirm_state;
+
     button_ON();
-    confirm_state = false;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: false`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
@@ -149,4 +146,4 @@ export function safe_closeByCancel(){
     document.getElementById("confirmOut").style.display = "none";
 }
 
-document.getElementById("safeBut1").addEventListener("click", safe_closeByCancel);+
+document.getElementById("safeBut1").addEventListener("click", safe_closeByCancel);
