@@ -42,10 +42,13 @@ export function confirmOn(){
 
 document.getElementById("BConfirm").addEventListener("click",confirmOn);
 
+
 export function true_conformOff(){
+    let confirm_state;
     button_ON();
+    confirm_state = true;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: true`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
@@ -54,12 +57,55 @@ export function true_conformOff(){
 document.getElementById("confirmBut2").addEventListener("click", true_conformOff);
 
 export function false_conformOff(){
+    let confirm_state;
     button_ON();
+    confirm_state = false;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: false`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
 }
 
 document.getElementById("confirmBut1").addEventListener("click", false_conformOff);
+
+export function prompt_open(){
+    button_OFF();
+    document.getElementById("dPrompt").show();
+}
+
+document.getElementById("Bprompt").addEventListener("click", prompt_open);
+
+
+export function prompt_closeByOk(){
+    let prompt_val;
+    button_ON();
+    document.getElementById("dPrompt").close();
+    prompt_val = document.getElementById("pmt").value();
+
+    if(prompt_val != null && prompt_val != ""){
+
+        document.getElementById("promptOut").innerHTML = `Prompt result: ${prompt_val}`;
+    }
+
+    else {
+
+        document.getElementById("promptOut").innerHTML = "User didn't enter anything";
+    }
+    document.getElementById("promptOut").style.display = "initial";
+    document.getElementById("confirmOut").style.display = "none";
+    document.getElementById("safeP_Out").style.display = "none";
+}
+
+document.getElementById("promptBut2").addEventListener("click", prompt_closeByOk);
+
+export function prompt_closeByCancel(){
+    button_ON();
+    document.getElementById("dPrompt").close();
+    document.getElementById("promptOut").innerHTML = "User didn't enter anything";
+    document.getElementById("promptOut").style.display = "initial";
+    document.getElementById("confirmOut").style.display = "none";
+    document.getElementById("safeP_Out").style.display = "none";
+}
+
+document.getElementById("promptBut1").addEventListener("click", prompt_closeByCancel);
