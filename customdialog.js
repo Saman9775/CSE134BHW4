@@ -24,4 +24,4 @@ export function alertOff(){
 }
 
 document.getElementById("BAlert").addEventListener("click", alertOn);
-document.getElementById("BAlert").addEventListener("click", alertOff);
+document.getElementById("alertBut").addEventListener("click", alertOff);
