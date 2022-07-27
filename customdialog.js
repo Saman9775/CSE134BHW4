@@ -9,10 +9,10 @@ export function alertOn(){
    // disButt();
     document.getElementById("dAlert").show();
 }
+document.getElementById("BAlert").addEventListener("click", alertOn);
 export function alertOff(){
     //enaButt();
     document.getElementById("dAlert").close();
 }
 
-document.getElementById("BAlert").addEventListener("click", alertOn);
 document.getElementById("alertBut").addEventListener("click", alertOff);
