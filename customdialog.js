@@ -6,7 +6,7 @@ export function alertOn(){
 document.getElementById("BAlert").addEventListener("click", alertOn);
 
 export function alertOff(){
-    //button_ON();
+    //button_ON() ;
     document.getElementById("dAlert").close();
 }
 
