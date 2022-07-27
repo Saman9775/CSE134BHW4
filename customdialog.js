@@ -4,22 +4,13 @@
  */
 
 
-export function disButt(){
-    document.getElementById("BAlert").disabled = true;
-}
-
-
-export function enaButt(){
-    document.getElementById("BAlert").disabled = false;
-
-}
 
 export function alertOn(){
-    disButt();
+   // disButt();
     document.getElementById("dAlert").show();
 }
 export function alertOff(){
-    enaButt();
+    //enaButt();
     document.getElementById("dAlert").close();
 }
 
