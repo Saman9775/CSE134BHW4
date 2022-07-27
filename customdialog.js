@@ -5,16 +5,15 @@
 
 
 export function disButt(){
-    document.getElementById("dAlert").disabled = true;
+    document.getElementById("BAlert").disabled = true;
 }
 
 
 export function enaButt(){
-    document.getElementById("dAlert").disabled = false;
+    document.getElementById("BAlert").disabled = false;
 
 }
 
-// button event, show the alert dialog
 export function alertOn(){
     disButt();
     document.getElementById("dAlert").show();
