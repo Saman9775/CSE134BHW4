@@ -81,7 +81,7 @@ export function prompt_closeByOk(){
     let prompt_val;
     button_ON();
     document.getElementById("dPrompt").close();
-    prompt_val = document.getElementById("pmt").value();
+    prompt_val = document.getElementById("pmt").value;
 
     if(prompt_val != null && prompt_val != ""){
 
