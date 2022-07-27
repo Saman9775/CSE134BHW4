@@ -42,12 +42,10 @@ export function confirmOn(){
 
 document.getElementById("BConfirm").addEventListener("click",confirmOn);
 
-let confirm_state;
 export function true_conformOff(){
     button_ON();
-    confirm_state = true;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: true`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
@@ -57,9 +55,8 @@ document.getElementById("confirmBut2").addEventListener("click", true_conformOff
 
 export function false_conformOff(){
     button_ON();
-    confirm_state = false;
     document.getElementById("dConfirm").close();
-    document.getElementById("confirmOut").innerHTML = `Confirm result: ${confirm_state}`;
+    document.getElementById("confirmOut").innerHTML = `Confirm result: false`;
     document.getElementById("confirmOut").style.display = "initial";
     document.getElementById("promptOut").style.display = "none";
     document.getElementById("safeP_Out").style.display = "none";
