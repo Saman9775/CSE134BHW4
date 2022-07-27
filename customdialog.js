@@ -76,9 +76,9 @@ export function prompt_open(){
 
 document.getElementById("Bprompt").addEventListener("click", prompt_open);
 
-let prompt_val;
+
 export function prompt_closeByOk(){
-    
+    let prompt_val;
     button_ON();
     document.getElementById("dPrompt").close();
     prompt_val = document.getElementById("pmt").value;
