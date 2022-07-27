@@ -4,11 +4,23 @@
  */
 
 
+export function disButt(){
+    document.getElementById("dAlert").disabled = true;
+}
+
+
+export function enaButt(){
+    document.getElementById("dAlert").disabled = false;
+
+}
+
 // button event, show the alert dialog
 export function alertOn(){
+    disButt();
     document.getElementById("dAlert").show();
 }
 export function alertOff(){
+    enaButt();
     document.getElementById("dAlert").close();
 }
 
