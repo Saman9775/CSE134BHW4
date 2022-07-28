@@ -1,4 +1,4 @@
-export let needToEdit;
+export let needToEdit = document.getElementById("dialog_edit");
 
 export function open_add(){
     document.getElementById("dialog_info").show();
