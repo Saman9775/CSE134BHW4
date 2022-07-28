@@ -1,5 +1,5 @@
 export let needToEdit = document.getElementById("dialog_edit");
-
+export let edited;
 export function open_add(){
     document.getElementById("dialog_info").show();
 }
@@ -26,7 +26,8 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         //console.log(`Edit button click for text ${something}`);
-        open_add_edit(("create_item"));
+        open_add_edit();
+        listItemEL.textContent = edited;
     });
 
     listItemEL.appendChild(editt);
@@ -79,14 +80,16 @@ export function delete_button(){
 }
 
 
-export function open_add_edit(id){
+export function open_add_edit(){
     document.getElementById("dialog_edit").show();
-    document.getElementById(id) = needToEdit;
+    
 }
+
 
 export function close_add_cancle_edit(){
     document.getElementById("dialog_edit").close();
 }
+document.getElementById("cancel_but2").addEventListener("click", close_add_cancle_edit);
 
 export function edit_ok(){
     let singerNameEdit = document.getElementById("singer_name2").value;
@@ -102,9 +105,10 @@ export function edit_ok(){
 
     else{
 
-        let txt = `Title(Singer): ${singerNameEdit}, Date(Birthday Year): ${birthYearEdit}, Summery(Song Name): ${songNameEdit} `;
+        let txt2 = `Title(Singer): ${singerNameEdit}, Date(Birthday Year): ${birthYearEdit}, Summery(Song Name): ${songNameEdit} `;
+        edited = txt2;
         let temp = needToEdit.parentNode;
-        temp.textContent = txt;
+        temp.textContent = txt2;
         let edit_edit = edit_button();
         let delete_edit = delete_button();
         temp.appendChild(edit_edit);
@@ -114,3 +118,4 @@ export function edit_ok(){
 
     document.getElementById("dialog_edit").close();
 }
+document.getElementById("ok_but2").addEventListener("click", close_add_cancle_edit);
