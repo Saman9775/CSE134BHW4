@@ -25,7 +25,7 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         console.log(`Edit button click for text ${something}`);
-        document.getElementById("create_item").replaceChildren(listItemEL);
+        document.getElementById("create_item").replaceChildren(needToEdit);
     });
 
     listItemEL.appendChild(editt);
@@ -51,7 +51,7 @@ export function save_added_item(){
 
         let txt = `Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `;
         add_item(txt);   
-        //localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
     document.getElementById("dialog_info").close();
@@ -77,3 +77,39 @@ export function delete_button(){
     return my_Dbutt;
 }
 
+let needToEdit;
+export function open_add_edit(editedEl){
+    document.getElementById("dialog_edit").show();
+    needToEdit = editedEl;
+}
+
+export function close_add_cancle_edit(){
+    document.getElementById("dialog_edit").close();
+}
+
+export function edit_ok(){
+    let singerNameEdit = document.getElementById("singer_name2").value;
+    let birthYearEdit = document.getElementById("singer_year2").value;
+    let songNameEdit = document.getElementById("singer_summery2").value;
+
+    
+    if((singerNameEdit == null || singerNameEdit == "") || (birthYearEdit == null || birthYearEdit == "") || 
+    (songNameEdit == null || songNameEdit == "")){
+        
+        alert("ERROR: Cehck your inputs ");
+    }
+
+    else{
+
+        let txt = `Title(Singer): ${singerNameEdit}, Date(Birthday Year): ${birthYearEdit}, Summery(Song Name): ${songNameEdit} `;
+        let temp = needToEdit.parentNode;
+        temp.textContent = txt;
+        let edit_edit = edit_button();
+        let delete_edit = delete_button();
+        temp.appendChild(edit_edit);
+        temp.appendChild(delete_edit);
+        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+    }
+
+    document.getElementById("dialog_edit").close();
+}
