@@ -1,6 +1,9 @@
 export function alertOn(){
    button_OFF();
     document.getElementById("dAlert").show();
+    document.getElementById("confirmOut").innerHTML = "";
+    document.getElementById("promptOut").innerHTML = "";
+    document.getElementById("safeP_Out").innerHTML = "";
 }
 
 document.getElementById("BAlert").addEventListener("click", alertOn);
