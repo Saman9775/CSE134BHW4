@@ -25,7 +25,6 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         console.log(`Edit button click for text ${something}`);
-        document.getElementById("dialog_info").show();
         document.getElementById("create_item").replaceChildren(listItemEL);
     });
 
