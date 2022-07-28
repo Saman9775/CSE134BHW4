@@ -27,7 +27,7 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         //console.log(`Edit button click for text ${something}`);
-        
+        open_add_edit();
     });
 
     listItemEL.appendChild(editt);
@@ -106,7 +106,7 @@ export function edit_ok(){
     else{
 
         let txt2 = `Title(Singer): ${singerNameEdit}, Date(Birthday Year): ${birthYearEdit}, Summery(Song Name): ${songNameEdit} `;
-        edited = txt2;
+        //edited = txt2;
         let temp = needToEdit.parentNode;
         temp.textContent = txt2;
         let edit_edit = edit_button();
