@@ -25,8 +25,8 @@ export function add_item(something){
     });
 
     editt.addEventListener("click", () =>{
-        console.log(`Edit button click for text ${something}`);
-        open_add_edit(document.getElementById("create_item"));
+        //console.log(`Edit button click for text ${something}`);
+        open_add_edit(("create_item"));
     });
 
     listItemEL.appendChild(editt);
@@ -79,9 +79,9 @@ export function delete_button(){
 }
 
 
-export function open_add_edit(editedEl){
+export function open_add_edit(id){
     document.getElementById("dialog_edit").show();
-    needToEdit = editedEl;
+    document.getElementById(id) = needToEdit;
 }
 
 export function close_add_cancle_edit(){
