@@ -81,6 +81,7 @@ export function delete_button(){
 
 
 export function open_add_edit(){
+    document.getElementById("dialog_edit").show();
     toedit = needToEdit;
     
 }
