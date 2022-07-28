@@ -24,9 +24,9 @@ export function add_item(something){
     });
 
     editt.addEventListener("click", () =>{
-        console.log(`Delete button click for text ${something}`);
+        console.log(`Edit button click for text ${something}`);
         open_add();
-        
+        document.getElementById("create_item").replaceChild(listItemEL);
     });
 
     listItemEL.appendChild(editt);
