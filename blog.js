@@ -27,6 +27,7 @@ export function add_item(something){
         console.log(`Edit button click for text ${something}`);
         document.getElementById("dialog_info").show();
         document.getElementById("create_item").replaceChild(listItemEL);
+        document.getElementById("dialog_info").close();
     });
 
     listItemEL.appendChild(editt);
