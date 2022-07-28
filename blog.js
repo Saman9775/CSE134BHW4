@@ -23,6 +23,12 @@ export function add_item(something){
         document.getElementById("create_item").removeChild(listItemEL);
     });
 
+    editt.addEventListener("click", () =>{
+        console.log(`Delete button click for text ${something}`);
+        open_add();
+        
+    });
+
     listItemEL.appendChild(editt);
     listItemEL.appendChild(deletee);
     document.getElementById("create_item").appendChild(listItemEL);
@@ -58,7 +64,7 @@ export function edit_button(){
 
     let my_Ebutt = document.createElement(`button`);
    // my_Ebutt.className = "forEdit";
-    my_Ebutt.textContent = "edit_Info";
+    my_Ebutt.textContent = "EDIT";
 
     return my_Ebutt;
 }
