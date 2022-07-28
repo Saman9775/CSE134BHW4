@@ -63,9 +63,19 @@ export function delete_button(){
     return my_Dbutt;
 }
 
-export function remove_item(item){
+export function remove_prepare(item){
 
     item.parentNode.remove();
 }
 
-document.getElementById("forDelete").addEventListener("click", remove_item);
+export function remove_item(){
+    
+    for(let i = 0; i < document.getElementById("create_item").getElementById("forDelete").length; i++){
+
+        document.getElementById("create_item").getElementById("forDelete")[i].onclick = function(){
+
+            remove_prepare(this);
+            localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+        }
+    }
+}
