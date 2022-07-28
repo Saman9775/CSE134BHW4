@@ -16,7 +16,7 @@ export function add_item(something){
     newItem = document.createElement(`li`);
     let editt = edit_button();
     let deletee = delete_button();
-    newItem.innerHTML = something;
+    newItem.textContent = something;
     newItem.appendChild(editt);
     newItem.appendChild(deletee);
     document.getElementById("create_item").appendChild(newItem);
@@ -39,8 +39,7 @@ export function save_added_item(){
 
         add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `);
         remove_item();
-        document.getElementsByClassName("forDelete").addEventListener("click", remove_item);
-        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+         localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
     document.getElementById("dialog_info").close();
@@ -52,7 +51,7 @@ export function edit_button(){
 
     let my_Ebutt = document.createElement(`button`);
     my_Ebutt.className = "forEdit";
-    my_Ebutt.innerHTML = "edit_Info";
+    my_Ebutt.textContent = "edit_Info";
 
     return my_Ebutt;
 }
@@ -61,7 +60,7 @@ export function delete_button(){
 
     let my_Dbutt = document.createElement(`button`);
     my_Dbutt.className = "forDelete";
-    my_Dbutt.innerHTML = "delete_Info";
+    my_Dbutt.textContent = "delete_Info";
 
     return my_Dbutt;
 }
@@ -75,11 +74,11 @@ export function remove_item(){
     
     for(let i = 0; i < document.getElementById("create_item").getElementsByClassName("forDelete").length; i++){
 
-        remove_prepare(document.getElementById("create_item").getElementsByClassName("forDelete")[i]); 
+        document.getElementsByClassName("forDelete").addEventListener("click", () =>{
 
-            
-        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
-        
+            remove_prepare(this);
+            localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+        });
     }
 }
 
