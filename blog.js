@@ -1,4 +1,5 @@
 export let needToEdit = document.getElementById("dialog_edit");
+export let toedit = document.getElementById("dialog_info");
 export let edited;
 export function open_add(){
     document.getElementById("dialog_info").show();
@@ -26,8 +27,7 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         //console.log(`Edit button click for text ${something}`);
-        open_add();
-        listItemEL.textContent = edited;
+        
     });
 
     listItemEL.appendChild(editt);
@@ -81,7 +81,7 @@ export function delete_button(){
 
 
 export function open_add_edit(){
-    document.getElementById("dialog_edit").show();
+    toedit = needToEdit;
     
 }
 
