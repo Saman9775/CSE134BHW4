@@ -37,7 +37,7 @@ export function save_added_item(){
 
     else{
 
-        add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName}`);
+        add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `);
     }
 
     document.getElementById("dialog_info").close();
@@ -62,3 +62,10 @@ export function delete_button(){
 
     return my_Dbutt;
 }
+
+export function remove_item(item){
+
+    item.parentNode.remove();
+}
+
+document.getElementById("forDelete").addEventListener("click", remove_item);
