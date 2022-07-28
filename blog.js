@@ -45,7 +45,7 @@ export function save_added_item(){
     else{
 
         let txt = `Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `;
-        add_item(txt);        
+        add_item(txt);   
         localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
@@ -57,7 +57,7 @@ document.getElementById("ok_but").addEventListener("click", save_added_item);
 export function edit_button(){
 
     let my_Ebutt = document.createElement(`button`);
-    my_Ebutt.className = "forEdit";
+   // my_Ebutt.className = "forEdit";
     my_Ebutt.textContent = "edit_Info";
 
     return my_Ebutt;
@@ -71,24 +71,4 @@ export function delete_button(){
 
     return my_Dbutt;
 }
-
-/** 
-export function remove_prepare(item){
-
-    item.parentNode.remove();
-}
-
-export function remove_item(){
-    
-    for(let i = 0; i < document.getElementById("create_item").getElementsByClassName("forDelete").length; i++){
-
-        document.getElementById("create_item").getElementsByClassName("forDelete")[i].addEventListener("click", () =>{
-
-            remove_prepare(this);
-            localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
-        });
-    }
-}
-
-*/
 
