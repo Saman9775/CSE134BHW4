@@ -29,14 +29,7 @@ export function add_item(something){
         console.log(`Edit button click for text ${something}`);
         open_add();
         document.getElementById("create_item").removeChild(listItemEL);
-        let listItemEL2;
-        listItemEL2 = document.createElement(`li`);
-        //let editt2 = edit_button();
-        //let deletee2 = delete_button();
-        listItemEL2.textContent = edited;
-        //listItemEL2.appendChild(editt2);
-        //listItemEL.appendChild(deletee2);
-        document.getElementById("create_item").appendChild(listItemEL2);
+        edit_ok();
     });
 
     listItemEL.appendChild(editt);
