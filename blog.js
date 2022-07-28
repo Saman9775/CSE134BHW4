@@ -17,9 +17,14 @@ export function add_item(something){
     let editt = edit_button();
     let deletee = delete_button();
     listItemEL.textContent = something;
-
-    newItem.appendChild(editt);
-    newItem.appendChild(deletee);
+    /** 
+    deletee.addEventListener("click", () =>{
+        console.log(`Delete button click for text ${something}`);
+        document.getElementById("create_item").removeChild(listItemEL);
+    });
+    */
+    listItemEL.appendChild(editt);
+    listItemEL.appendChild(deletee);
     document.getElementById("create_item").appendChild(listItemEL);
 
 }
