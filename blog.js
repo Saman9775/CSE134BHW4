@@ -38,7 +38,7 @@ export function save_added_item(){
     else{
 
         add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `);
-        remove_item();
+        document.getElementsByClassName("forDelete").addEventListener("click", remove_item);
         localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
