@@ -74,12 +74,12 @@ export function remove_item(){
     
     for(let i = 0; i < document.getElementById("create_item").getElementsByClassName("forDelete").length; i++){
 
-        document.getElementById("create_item").getElementsByClassName("forDelete")[i] = function(){
+        document.getElementById("create_item").getElementsByClassName("forDelete")[i].addEventListener("click", save_added_item) = function(){
 
             remove_prepare(this);
             localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
         }
     }
 }
-document.getElementsByClassName("forDelete").addEventListener("click", remove_item);
+
 
