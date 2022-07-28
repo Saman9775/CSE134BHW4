@@ -1,4 +1,5 @@
-//click on 
+export let needToEdit;
+
 export function open_add(){
     document.getElementById("dialog_info").show();
 }
@@ -25,7 +26,7 @@ export function add_item(something){
 
     editt.addEventListener("click", () =>{
         console.log(`Edit button click for text ${something}`);
-        document.getElementById("create_item").replaceChildren(needToEdit);
+        open_add_edit(document.getElementById("create_item"));
     });
 
     listItemEL.appendChild(editt);
@@ -77,7 +78,7 @@ export function delete_button(){
     return my_Dbutt;
 }
 
-let needToEdit;
+
 export function open_add_edit(editedEl){
     document.getElementById("dialog_edit").show();
     needToEdit = editedEl;
