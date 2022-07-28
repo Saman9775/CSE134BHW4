@@ -26,8 +26,9 @@ export function add_item(something){
     });
 
     editt.addEventListener("click", () =>{
-        //console.log(`Edit button click for text ${something}`);
+        console.log(`Edit button click for text ${something}`);
         open_add_edit();
+        listItemEL.textContent = edited;
     });
 
     listItemEL.appendChild(editt);
