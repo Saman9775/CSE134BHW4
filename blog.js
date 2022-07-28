@@ -12,14 +12,19 @@ document.getElementById("cancel_but").addEventListener("click", close_add_cancel
 
 export function add_item(something){
 
-    let newItem;
-    newItem = document.createElement(`li`);
+    let listItemEL;
+    listItemEL = document.createElement(`li`);
     let editt = edit_button();
     let deletee = delete_button();
     newItem.textContent = something;
+    deletee.addEventListener("click", () =>{
+        console.log(`Delete button click for text ${something}`);
+        document.getElementById("create_item").removeChild(listItemEL);
+    })
     newItem.appendChild(editt);
     newItem.appendChild(deletee);
-    document.getElementById("create_item").appendChild(newItem);
+    document.getElementById("create_item").appendChild(listItemEL);
+
 }
 
 export function save_added_item(){
@@ -37,9 +42,9 @@ export function save_added_item(){
 
     else{
 
-        add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `);
-        remove_item();
-         localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+        let txt = `Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `;
+        add_item(txt);        
+        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
     document.getElementById("dialog_info").close();
@@ -59,12 +64,13 @@ export function edit_button(){
 export function delete_button(){
 
     let my_Dbutt = document.createElement(`button`);
-    my_Dbutt.className = "forDelete";
-    my_Dbutt.textContent = "delete_Info";
+   // my_Dbutt.className = "forDelete";
+    my_Dbutt.textContent = "Delete";
 
     return my_Dbutt;
 }
 
+/** 
 export function remove_prepare(item){
 
     item.parentNode.remove();
@@ -81,4 +87,6 @@ export function remove_item(){
         });
     }
 }
+
+*/
 
