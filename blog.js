@@ -38,6 +38,8 @@ export function save_added_item(){
     else{
 
         add_item(`Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `);
+        remove_item();
+        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
     document.getElementById("dialog_info").close();
@@ -48,7 +50,7 @@ document.getElementById("ok_but").addEventListener("click", save_added_item);
 export function edit_button(){
 
     let my_Ebutt = document.createElement(`button`);
-    my_Ebutt.id = "forEdit";
+    my_Ebutt.className = "forEdit";
     my_Ebutt.innerHTML = "edit_Info";
 
     return my_Ebutt;
@@ -57,7 +59,7 @@ export function edit_button(){
 export function delete_button(){
 
     let my_Dbutt = document.createElement(`button`);
-    my_Dbutt.id = "forDelete";
+    my_Dbutt.className = "forDelete";
     my_Dbutt.innerHTML = "delete_Info";
 
     return my_Dbutt;
@@ -70,12 +72,13 @@ export function remove_prepare(item){
 
 export function remove_item(){
     
-    for(let i = 0; i < document.getElementById("create_item").getElementById("forDelete").length; i++){
+    for(let i = 0; i < document.getElementById("create_item").getElementsByClassName("forDelete").length; i++){
 
-        document.getElementById("create_item").getElementById("forDelete")[i].onclick = function(){
+        document.getElementById("create_item").getElementsByClassName("forDelete")[i].onclick = function(){
 
             remove_prepare(this);
             localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
         }
     }
 }
+
