@@ -20,7 +20,7 @@ export function add_item(something){
     deletee.addEventListener("click", () =>{
         console.log(`Delete button click for text ${something}`);
         document.getElementById("create_item").removeChild(listItemEL);
-    })
+    });
     newItem.appendChild(editt);
     newItem.appendChild(deletee);
     document.getElementById("create_item").appendChild(listItemEL);
