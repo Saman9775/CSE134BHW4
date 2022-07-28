@@ -16,7 +16,7 @@ export function add_item(something){
     listItemEL = document.createElement(`li`);
     let editt = edit_button();
     let deletee = delete_button();
-    newItem.textContent = something;
+    listItemEL.textContent = something;
 
     newItem.appendChild(editt);
     newItem.appendChild(deletee);
