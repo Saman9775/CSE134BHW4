@@ -52,7 +52,7 @@ export function save_added_item(){
 
         let txt = `Title(Singer): ${singerName}, Date(Birthday Year): ${birthYear}, Summery(Song Name): ${songName} `;
         add_item(txt);   
-        localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
+        //localStorage.setItem(`list_data`,JSON.stringify(document.getElementById("create_item").innerHTML));
     }
 
     document.getElementById("dialog_info").close();
